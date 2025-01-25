@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("didaticos.redimensionador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92b28838c88f8a1636830d717551404a38c7679d")]
 [assembly: System.Reflection.AssemblyProductAttribute("didaticos.redimensionador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("didaticos.redimensionador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

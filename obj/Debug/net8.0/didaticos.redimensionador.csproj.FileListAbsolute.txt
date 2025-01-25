@@ -12,3 +12,4 @@ C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\refint
 C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\didaticos.redimensionador.pdb
 C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\didaticos.redimensionador.genruntimeconfig.cache
 C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\ref\didaticos.redimensionador.dll
+C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\didaticos.redimensionador.sourcelink.json
