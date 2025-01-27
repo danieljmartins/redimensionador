@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Threading;
 
@@ -47,7 +48,7 @@ namespace didaticos.redimensionador
                 var arquivosEntrada = Directory.EnumerateFiles(diretorio_entrada);
 
                 // Ler o tamanho que irá redimensionar
-                int tamanho = 200; // pixels
+                int novaAltura = 200; // pixels
 
                 foreach ( var arquivo in arquivosEntrada)
                 {
@@ -56,6 +57,10 @@ namespace didaticos.redimensionador
                     FileInfo fileInfo = new FileInfo(arquivo);
 
                     // Redimensiona
+                    //Redimensionador(Image.FromStream(fileStream), novaAltura, diretorio_redimensionados);
+
+
+
 
                     // Copia os arquivos redimensionados para a pasta de redimensionados
 
@@ -64,6 +69,30 @@ namespace didaticos.redimensionador
 
                 Thread.Sleep ( new TimeSpan ( 0, 0, 3 ) );
             }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="imagem">Imagem a ser redimensionada</param>
+        /// <param name="altura">Altura a ser redimensionada</param>
+        /// <param name="caminho">Caminho onde o arquivo redimensionado será gravado</param>
+        /// <returns></returns>
+        static void Redimensionador(Image imagem, int altura, string caminho)
+        {
+            double ratio    = (double)altura / imagem.Height;
+            int novaLargura = (int)(imagem.Width  * ratio);
+            int novaAltura  = (int)(imagem.Height * ratio);
+
+            Bitmap novaImagem = new Bitmap(novaLargura, novaAltura);
+
+            using (Graphics g = Graphics.FromImage(novaImagem))
+            {
+                g.DrawImage(imagem, 0, 0, novaLargura, novaAltura);
+            }
+
+            novaImagem.Save(caminho);
+            imagem.Dispose();
         }
     }
 }
