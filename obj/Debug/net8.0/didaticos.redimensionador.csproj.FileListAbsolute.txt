@@ -13,3 +13,9 @@ C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\didati
 C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\didaticos.redimensionador.genruntimeconfig.cache
 C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\ref\didaticos.redimensionador.dll
 C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\didaticos.redimensionador.sourcelink.json
+C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\bin\Debug\net8.0\System.Private.Windows.Core.dll
+C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\didaticos.redimensionador.csproj.AssemblyReference.cache
+C:\estudos\csharp_udemy\secao4\didaticos.redimensionador\obj\Debug\net8.0\didatico.7C920078.Up2Date

@@ -41,6 +41,9 @@ namespace didaticos.redimensionador
             }
             #endregion
 
+            FileStream fileStream;
+            FileInfo fileInfo;
+
             while (true)
             {
                 // O programa vai olhar pra pasta de entrada
@@ -53,18 +56,21 @@ namespace didaticos.redimensionador
                 foreach ( var arquivo in arquivosEntrada)
                 {
 
-                    FileStream file = new FileStream(arquivo, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
-                    FileInfo fileInfo = new FileInfo(arquivo);
+                    fileStream = new FileStream(arquivo, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
+                    fileInfo = new FileInfo(arquivo);
+
+                    string caminho = Environment.CurrentDirectory + @"\" + diretorio_redimensionados 
+                        + @"\" + DateTime.Now.Millisecond.ToString() + "_" + fileInfo.Name;
 
                     // Redimensiona
-                    //Redimensionador(Image.FromStream(fileStream), novaAltura, diretorio_redimensionados);
+                    Redimensionador(Image.FromStream(fileStream), novaAltura, caminho);
 
-
-
-
-                    // Copia os arquivos redimensionados para a pasta de redimensionados
+                    // Fecha o arquivo
+                    fileStream.Close();
 
                     // Move o arquivo de entrada para a pasta de finalizados
+                    string caminhoFinalizado = Environment.CurrentDirectory + @"\" + diretorio_finalizados + @"\" + fileInfo.Name;
+                    fileInfo.MoveTo ( caminhoFinalizado );
                 }
 
                 Thread.Sleep ( new TimeSpan ( 0, 0, 3 ) );
